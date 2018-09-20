@@ -1,0 +1,31 @@
+@import "~@angular/material/prebuilt-themes/pink-bluegrey.css";
+@import 'https://fonts.googleapis.com/icon?family=Material+Icons';
+
+body {
+ margin: 0;
+ font-family: Roboto, sans-serif;
+ background-color:gray;
+}
+
+.piplup
+{
+flex: 1 1 auto;
+text-align:center;
+
+color:black;
+}
+
+.naniwo.mat-line
+{
+color:black;
+font-size:500px;
+font-weight:bold;
+
+}
+
+::ng-deep .mat-card-header-text {
+  color:pink;
+
+}
+
+
