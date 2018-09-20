@@ -5,7 +5,7 @@ import { Observable } from 'rxjs/Observable';
 
 @Injectable()
 export class CarService {
-  public API = '//http://prueba-concepto-server.herokuapp.com';
+  public API = '//prueba-concepto-server.herokuapp.com';
   public CAR_API = this.API + '/cars';
 
   constructor(private http: HttpClient) {
