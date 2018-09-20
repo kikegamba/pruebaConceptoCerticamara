@@ -5,14 +5,14 @@ import { Observable } from 'rxjs/Observable';
 
 @Injectable()
 export class CarService {
-  public API = '//https://prueba-concepto-server.herokuapp.com';
+  public API = '//http://prueba-concepto-server.herokuapp.com';
   public CAR_API = this.API + '/cars';
 
   constructor(private http: HttpClient) {
   }
 
   getAll(): Observable<any> {
-    return this.http.get('https://prueba-concepto-server.herokuapp.com');
+    return this.http.get('http://prueba-concepto-server.herokuapp.com');
   }
   
   get(id: string) {
