@@ -2,20 +2,22 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
 import { map } from 'rxjs/operators';
+import 'rxjs/add/operator/map';
+
 
 @Injectable()
 export class CarService {
   public API = '//prueba-concepto-server.herokuapp.com';
   public CAR_API = this.API + '/cars';
-  
+  private cars = [];
 
   constructor(private http: HttpClient) {
   }
 
   getAll(): Observable<any> {
 
-	console.log("sirve");
-    return this.http.get('http://prueba-concepto-server.herokuapp.com/cars').pipe(map((response)=><car[]>{response.json()}));
+    return this.http.get('http://prueba-concepto-server.herokuapp.com/cars');
+    
     
   }
   
