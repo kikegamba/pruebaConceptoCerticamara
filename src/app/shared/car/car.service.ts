@@ -7,14 +7,14 @@ import { map } from 'rxjs/operators';
 export class CarService {
   public API = '//prueba-concepto-server.herokuapp.com';
   public CAR_API = this.API + '/cars';
-  private cars = [];
+  
 
   constructor(private http: HttpClient) {
   }
 
   getAll(): Observable<any> {
 
-    return this.http.get('http://prueba-concepto-server.herokuapp.com/cars').pipe(map((response)=>{response.cars
+    return this.http.get('http://prueba-concepto-server.herokuapp.com/cars').pipe(map((response)=><Cars[]>{response.json()
     });
     
   }
