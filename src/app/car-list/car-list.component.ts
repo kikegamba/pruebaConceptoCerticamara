@@ -14,6 +14,7 @@ export class CarListComponent implements OnInit {
   constructor(private carService: CarService,private giphyService: GiphyService) { }
 
   ngOnInit() {
+  console.log("llega");
     this.carService.getAll().subscribe(data => {
 	console.log("Antes del data:"+this.cars);
       this.cars = data;
