@@ -11,7 +11,7 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./car-edit.component.css']
 })
 export class CarEditComponent implements OnInit, OnDestroy {
-  car: any =[] ;
+  car: any = {};
 
   sub: Subscription;
 

@@ -12,7 +12,7 @@ export class CarService {
   }
 
   getAll(): Observable<any> {
-    return this.http.get('http://prueba-concepto-server.herokuapp.com');
+    return this.http.get('http://prueba-concepto-server.herokuapp.com/cars');
   }
   
   get(id: string) {
@@ -20,7 +20,7 @@ export class CarService {
   }
 
   save(car: any): Observable<any> {
-    let result: Observable<Arraylist>;
+    let result: Observable<Object>;
     if (car['href']) {
       result = this.http.put(car.href, car);
     } else {
