@@ -17,10 +17,10 @@ export class CarService {
   getAll(): Observable<any> {
 
     this.http.get<cars[]>('http://prueba-concepto-server.herokuapp.com/cars').map((response)=>{
-
+		console.log("cars es"+ this.cars);
       return response.cars
     });
-    console.log("cars es"+ this.cars);
+    
   }
   
   get(id: string) {
