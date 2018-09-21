@@ -15,8 +15,7 @@ export class CarService {
   getAll(): Observable<any> {
 
 	console.log("sirve");
-    return this.http.get('http://prueba-concepto-server.herokuapp.com/cars').pipe(map((response)=><Car[]>{response.json()
-    });
+    return this.http.get('http://prueba-concepto-server.herokuapp.com/cars').pipe(map((response)=><car[]>{response.json()}));
     
   }
   
