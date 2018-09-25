@@ -17,7 +17,7 @@ export class CarService {
   getAll(): Observable<any> {
 
     this.http.get(this.API + '/cool-cars');
-	console.log((response)=>response.json());
+
     
     
   }
