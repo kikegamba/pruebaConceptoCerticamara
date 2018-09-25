@@ -16,7 +16,7 @@ export class CarService {
 
   getAll(): Observable<any> {
 
-    this.http.get('http://prueba-concepto-server.herokuapp.com');
+    this.http.get(this.API + '/cool-cars');
 	console.log((response)=>response.json());
     
     
