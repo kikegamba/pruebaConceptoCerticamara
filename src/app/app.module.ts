@@ -12,8 +12,6 @@ import { CarEditComponent } from './car-edit/car-edit.component';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 
-import { AlertComponent } from './alert_component/alert_component';
-import { AlertService } from './alert_component/alert.service';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: '/car-list', pathMatch: 'full' },
@@ -36,8 +34,7 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
 	CarListComponent,
-	CarEditComponent,
-	AlertComponent
+	CarEditComponent
 
 	
   ],
@@ -54,7 +51,7 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes)
 
   ],
-  providers: [CarService,AlertService,GiphyService],
+  providers: [CarService,GiphyService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

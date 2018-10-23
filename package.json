@@ -28,7 +28,6 @@
     "path": "^0.12.7",
     "rxjs": "^6.3.2",
     "rxjs-compat": "^6.3.2",
-	"systemjs": "^0.19.47",
     "zone.js": "~0.8.26"
   },
   "devDependencies": {
@@ -39,7 +38,6 @@
     "@types/jasmine": "~2.8.6",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
-	"concurrently": "^3.1.0",
     "codelyzer": "~4.2.1",
     "enhanced-resolve": "^3.3.0",
     "jasmine-core": "~2.99.1",
