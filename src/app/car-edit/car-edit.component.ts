@@ -58,7 +58,7 @@ export class CarEditComponent implements OnInit, OnDestroy {
       this.gotoList();
     }, error => console.error(error));
 	
-	this.alertService.info("Se ha eliminado con exito de la lista");
+
   }
   
   
